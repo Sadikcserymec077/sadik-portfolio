@@ -1448,3 +1448,131 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* ---- EDUCATION SECTION STYLES ---- */
+.education-section {
+    padding: 8rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.edu-card {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(196, 164, 130, 0.4);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.edu-content {
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.edu-badge {
+    align-self: flex-start;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 50px;
+    padding: 0.3rem 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: #a19d98;
+    margin-bottom: 2rem;
+    background: rgba(255,255,255,0.02);
+}
+
+.edu-date {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.edu-degree {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
+}
+
+.edu-institution {
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    color: #a19d98;
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+}
+
+.edu-highlights {
+    margin-top: auto;
+}
+
+.edu-highlights h4 {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.edu-highlights ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.edu-highlights ul li {
+    position: relative;
+    padding-left: 1.2rem;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: #a19d98;
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
+.edu-highlights ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+.edu-watermark {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    font-size: 8rem;
+    color: rgba(255,255,255,0.02);
+    z-index: 0;
+    pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+    .education-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+}
