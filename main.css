@@ -1589,3 +1589,105 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* ---- SKILLS TOOLKIT STYLES ---- */
+.skills-toolkit-section {
+    padding: 8rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.skills-toolkit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.skill-tool-card {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.skill-tool-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(196, 164, 130, 0.4);
+}
+
+.skill-tool-content {
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.skill-card-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+.skill-card-title i {
+    color: var(--accent-color);
+}
+
+.skill-badges-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.skill-badge {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50px;
+    padding: 0.5rem 1.2rem;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: #eae5e0;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    transition: all 0.3s ease;
+}
+.skill-badge:hover {
+    background: rgba(196, 164, 130, 0.1);
+    border-color: rgba(196, 164, 130, 0.4);
+}
+
+.pulse-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    box-shadow: 0 0 8px rgba(196, 164, 130, 0.5);
+}
+
+.status-bar {
+    margin-top: auto;
+    background: #0a0a0a;
+    border-radius: 6px;
+    padding: 0.8rem 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: #666;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 1200px) {
+    .skills-toolkit-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .skills-toolkit-grid {
+        grid-template-columns: 1fr;
+    }
+}
