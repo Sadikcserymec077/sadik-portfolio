@@ -1323,50 +1323,38 @@ footer {
     background: #1a1a1a;
 }
 
-.diamond-border {
+.rotating-square-dashed {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     border: 1px dashed rgba(196, 164, 130, 0.4);
-    transform: rotate(45deg);
     border-radius: 20px;
     z-index: 1;
+    animation: rotateSquare 20s linear infinite;
 }
 
-.orbiting-dot {
+.rotating-square-solid {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    animation: orbit 15s linear infinite;
-    z-index: 3;
-}
-.orbiting-dot span {
-    position: absolute;
-    top: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid var(--accent-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--bg-color);
-}
-.orbiting-dot span::after {
-    content: '';
-    width: 6px;
-    height: 6px;
-    background: var(--accent-color);
-    border-radius: 50%;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    border: 1px solid rgba(196, 164, 130, 0.2);
+    border-radius: 24px;
+    z-index: 1;
+    animation: rotateSquareReverse 25s linear infinite;
 }
 
-@keyframes orbit {
+@keyframes rotateSquare {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+@keyframes rotateSquareReverse {
+    0% { transform: rotate(45deg); }
+    100% { transform: rotate(-315deg); }
 }
 
 .sidebar-links {
