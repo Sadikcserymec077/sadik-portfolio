@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K Mohammad Sadik — Software Engineer | Java Full Stack</title>
     <link rel="stylesheet" href="main.css">
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body class="dark-mode" id="body">
     <!-- Ambient Glow Backgrounds -->
     <div class="ambient-glow glow-1"></div>
     <div class="ambient-glow glow-2"></div>
 
-        <!-- Header -->
+    <!-- Header -->
     <header class="navbar-pill-wrapper">
         <nav class="nav-container-pill">
             <a href="#landing" class="logo">mohammad.sadik</a>
@@ -31,7 +35,8 @@
                 <li><a href="#certifications">CERTIFICATES</a></li>
                 <li><a href="#achievements">ACHIEVEMENTS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
-                <li><a href="assets/K_Mohammad_Sadik_Resume.pdf" target="_blank" class="resume-link"><i class="fa-regular fa-file-lines"></i> RESUME</a></li>
+                <li><a href="assets/K_Mohammad_Sadik_Resume.pdf" target="_blank" class="resume-link"><i
+                            class="fa-regular fa-file-lines"></i> RESUME</a></li>
             </ul>
             <div class="nav-utils-pill">
                 <button id="mono-toggle" class="util-btn-pill"><span>>_</span> STANDARD</button>
@@ -58,7 +63,8 @@
             </div>
             <div class="terminal-body" id="terminal-body">
                 <div class="terminal-line">Welcome to K Mohammad Sadik's Interactive Portfolio Terminal.</div>
-                <div class="terminal-line">Type <span class="highlight">help</span> for a list of available commands.</div>
+                <div class="terminal-line">Type <span class="highlight">help</span> for a list of available commands.
+                </div>
                 <div class="terminal-input-line">
                     <span class="prompt">sadik@portfolio:~$</span>
                     <input type="text" id="terminal-input" autocomplete="off" autofocus>
@@ -68,7 +74,7 @@
     </div>
 
     <main>
-                <!-- Hero Section -->
+        <!-- Hero Section -->
         <section id="landing" class="hero-section">
             <!-- Floating Right Socials Panel -->
             <div class="floating-socials-right">
@@ -82,81 +88,112 @@
 
             <div class="hero-content text-center">
                 <h1 class="hero-title">K Mohammad<br>Sadik<span class="dot-accent">.</span></h1>
-                
+
                 <div class="hero-subtitle">
-                    SOFTWARE ENGINEER <span class="sep">|</span> JAVA & DSA <span class="sep">|</span> FULL-STACK (MERN)
+                    JAVA & DSA <span class="sep">|</span> FULL-STACK DEVELOPER
                 </div>
-                
+
                 <p class="hero-description">
                     I craft high-performance full-stack systems and solve<br>complex algorithmic problems.
                 </p>
-                
+
                 <div class="hero-cta">
                     <a href="#projects" class="btn pill-btn primary-pill">VIEW SELECTED WORK ↘</a>
                     <a href="#about" class="btn pill-btn secondary-pill">EXPLORE PROFILE ↗</a>
                 </div>
 
                 <div class="hero-social-icons">
-                    <a href="mailto:sadik.cse.rymec@gmail.com" class="icon-circle"><i class="fa-regular fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/k-mohammad-sadik" target="_blank" class="icon-circle"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://github.com/Sadikcserymec077" target="_blank" class="icon-circle"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://leetcode.com/u/sadikcserymec077" target="_blank" class="icon-circle"><i class="fa-solid fa-code"></i></a>
+                    <a href="mailto:sadik.cse.rymec@gmail.com" class="icon-circle"><i
+                            class="fa-regular fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/k-mohammad-sadik" target="_blank" class="icon-circle"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Sadikcserymec077" target="_blank" class="icon-circle"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://leetcode.com/u/sadikcserymec077" target="_blank" class="icon-circle"><i
+                            class="fa-solid fa-code"></i></a>
                 </div>
             </div>
         </section>
 
         <!-- About Section -->
-        <section id="about" class="section">
-            <h2 class="section-title">About</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p class="quote-text">
-                        "I am a Java Full Stack Developer with hands-on experience in Spring Boot, REST APIs, MySQL, and React. I have a strong foundation in Core Java, OOPs, database design, and building secure backend applications. I recently completed an internship at KodNest Technologies where I built full-stack MVC applications. My goal is to build software that turns complexity into clarity — utilizing clean architecture and scalable engineering to solve impactful problems."
-                    </p>
+        <section id="about" class="about-section">
+            <div class="terminal-header-text">
+                <span class="prompt">sadik@portfolio:~$</span> cd ~/about-me
+            </div>
+            
+            <h2 class="about-title">About Me</h2>
+            <div class="title-underline"></div>
+            
+            <div class="about-layout">
+                <!-- Left Sidebar -->
+                <div class="about-sidebar">
+                    <div class="profile-image-container">
+                        <div class="diamond-border"></div>
+                        <img src="assets/profile.jpg" alt="K Mohammad Sadik" class="profile-img-square">
+                        <div class="orbiting-dot"><span></span></div>
+                    </div>
+                    
+                    <div class="sidebar-links">
+                        <a href="#education" class="sidebar-pill">EDUCATION <span class="arrow">→</span></a>
+                        <a href="#projects" class="sidebar-pill">PROJECTS <span class="arrow">→</span></a>
+                        <a href="#skills" class="sidebar-pill">SKILLS <span class="arrow">→</span></a>
+                        <a href="#certifications" class="sidebar-pill">CERTIFICATIONS <span class="arrow">→</span></a>
+                    </div>
                 </div>
                 
-                <div class="about-cards">
-                    <!-- Card 1: Mission (Flippable) -->
-                    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front window-card">
-                                <div class="window-header">
-                                    <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                <!-- Right Content -->
+                <div class="about-main-content">
+                    <p class="about-paragraph">
+                        "I am a Java Full Stack Developer with hands-on experience in Spring Boot, REST APIs, MySQL, and React. I have a strong foundation in Core Java, OOPs, database design, and building secure backend applications. I recently completed an internship at KodNest Technologies where I built full-stack MVC applications. My goal is to build software that turns complexity into clarity — utilizing clean architecture and scalable engineering to solve impactful problems."
+                    </p>
+                    
+                    <div class="about-cards-row">
+                        <!-- Card 1: Mission -->
+                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front window-card-dark">
+                                    <div class="window-header-minimal">
+                                        <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                                        <div class="window-title">mission.sh</div>
+                                    </div>
+                                    <div class="card-content centered">
+                                        <i class="fa-solid fa-bullseye card-icon"></i>
+                                        <h3>Mission</h3>
+                                    </div>
                                 </div>
-                                <div class="card-content centered">
-                                    <h3>My Mission</h3>
-                                    <p class="hint">(Click to reveal)</p>
-                                </div>
-                            </div>
-                            <div class="flip-card-back window-card">
-                                <div class="window-header">
-                                    <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
-                                </div>
-                                <div class="card-content">
-                                    <p>"To build software that turns complexity into clarity — using clean architecture, robust backends, and scalable engineering to solve problems that actually matter to the people using it."</p>
+                                <div class="flip-card-back window-card-dark">
+                                    <div class="window-header-minimal">
+                                        <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                                        <div class="window-title">mission.sh</div>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>"To build software that turns complexity into clarity — using clean architecture, robust backends, and scalable engineering to solve problems that actually matter to the people using it."</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Card 2: Vision (Flippable) -->
-                    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front window-card">
-                                <div class="window-header">
-                                    <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                        <!-- Card 2: Vision -->
+                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front window-card-dark">
+                                    <div class="window-header-minimal">
+                                        <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                                        <div class="window-title">vision.sh</div>
+                                    </div>
+                                    <div class="card-content centered">
+                                        <i class="fa-regular fa-eye card-icon"></i>
+                                        <h3>Vision</h3>
+                                    </div>
                                 </div>
-                                <div class="card-content centered">
-                                    <h3>My Vision</h3>
-                                    <p class="hint">(Click to reveal)</p>
-                                </div>
-                            </div>
-                            <div class="flip-card-back window-card">
-                                <div class="window-header">
-                                    <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
-                                </div>
-                                <div class="card-content">
-                                    <p>"To grow into an engineer trusted to take ambiguous problems and ship reliable, production-ready systems — and to keep learning at the pace the field demands."</p>
+                                <div class="flip-card-back window-card-dark">
+                                    <div class="window-header-minimal">
+                                        <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                                        <div class="window-title">vision.sh</div>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>"To grow into an engineer trusted to take ambiguous problems and ship reliable, production-ready systems — and to keep learning at the pace the field demands."</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -169,10 +206,11 @@
         <section id="education" class="section">
             <h2 class="section-title">Education</h2>
             <div class="timeline">
-                
+
                 <div class="timeline-item window-card">
                     <div class="window-header">
-                        <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                        <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span
+                                class="dot green"></span></div>
                         <div class="window-title">degree.pdf</div>
                     </div>
                     <div class="card-content">
@@ -180,12 +218,14 @@
                             <h3>B.E. in Computer Science and Engineering</h3>
                             <span class="date">2022 – 2026</span>
                         </div>
-                        <h4 class="institution">Rao Bahadur Y. Mahabaleshwarappa Engineering College, Ballari, India</h4>
+                        <h4 class="institution">Rao Bahadur Y. Mahabaleshwarappa Engineering College, Ballari, India
+                        </h4>
                         <div class="highlights">
                             <p class="code-comment">// Key Highlights:</p>
                             <ul>
                                 <li>Maintaining a CGPA of 8.90</li>
-                                <li>Core coursework in Data Structures, Algorithms, DBMS, Operating Systems, Computer Networks</li>
+                                <li>Core coursework in Data Structures, Algorithms, DBMS, Operating Systems, Computer
+                                    Networks</li>
                             </ul>
                         </div>
                     </div>
@@ -193,7 +233,8 @@
 
                 <div class="timeline-item window-card">
                     <div class="window-header">
-                        <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                        <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span
+                                class="dot green"></span></div>
                         <div class="window-title">pu_board.txt</div>
                     </div>
                     <div class="card-content">
@@ -213,7 +254,8 @@
 
                 <div class="timeline-item window-card">
                     <div class="window-header">
-                        <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                        <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span
+                                class="dot green"></span></div>
                         <div class="window-title">sslc.txt</div>
                     </div>
                     <div class="card-content">
@@ -242,7 +284,8 @@
                 <!-- Project 1 -->
                 <div class="project-card browser-window">
                     <div class="browser-header">
-                        <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                        <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span
+                                class="dot green"></span></div>
                         <div class="url-bar">https://github.com/sadik/Q-Smart</div>
                     </div>
                     <div class="project-content">
@@ -250,23 +293,29 @@
                             <span class="prompt">sadik@portfolio:~$</span> ./01_q-smart<span class="cursor">_</span>
                         </div>
                         <p class="project-desc">
-                            A multi-tenant SaaS queue & appointment platform for hospitals, banks, and colleges with isolated organization management.
+                            A multi-tenant SaaS queue & appointment platform for hospitals, banks, and colleges with
+                            isolated organization management.
                         </p>
-                        
+
                         <div class="project-links">
-                            <a href="https://github.com/Sadikcserymec077/Queueless-Project" target="_blank" class="btn secondary-btn small"><i class="fa-brands fa-github"></i> GitHub</a>
-                            <a href="https://queueless-project.vercel.app/" target="_blank" class="btn primary-btn small"><i class="fa-solid fa-link"></i> Live Demo</a>
+                            <a href="https://github.com/Sadikcserymec077/Queueless-Project" target="_blank"
+                                class="btn secondary-btn small"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="https://queueless-project.vercel.app/" target="_blank"
+                                class="btn primary-btn small"><i class="fa-solid fa-link"></i> Live Demo</a>
                         </div>
-                        
+
                         <div class="project-details">
                             <h4>Key Outcomes:</h4>
                             <ul>
-                                <li>Designed secure authentication using Spring Security, JWT access/refresh tokens, BCrypt, and RBAC for Super Admin, Organization Admin, Staff, and User roles.</li>
-                                <li>Engineered REST APIs and Spring WebSockets (STOMP) for real-time queue sync, live token updates, and dashboard notifications.</li>
-                                <li>Integrated Razorpay for secure bookings and Google Gemini AI for intelligent queue assistance and user support.</li>
+                                <li>Designed secure authentication using Spring Security, JWT access/refresh tokens,
+                                    BCrypt, and RBAC for Super Admin, Organization Admin, Staff, and User roles.</li>
+                                <li>Engineered REST APIs and Spring WebSockets (STOMP) for real-time queue sync, live
+                                    token updates, and dashboard notifications.</li>
+                                <li>Integrated Razorpay for secure bookings and Google Gemini AI for intelligent queue
+                                    assistance and user support.</li>
                             </ul>
                         </div>
-                        
+
                         <div class="tech-stack">
                             <span class="tech-tag">Java 17</span>
                             <span class="tech-tag">Spring Boot</span>
@@ -282,31 +331,39 @@
                 <!-- Project 2 -->
                 <div class="project-card browser-window">
                     <div class="browser-header">
-                        <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                        <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span
+                                class="dot green"></span></div>
                         <div class="url-bar">https://github.com/sadik/RaiseTogether</div>
                     </div>
                     <div class="project-content">
                         <div class="cli-title">
-                            <span class="prompt">sadik@portfolio:~$</span> ./02_raisetogether<span class="cursor">_</span>
+                            <span class="prompt">sadik@portfolio:~$</span> ./02_raisetogether<span
+                                class="cursor">_</span>
                         </div>
                         <p class="project-desc">
-                            A scalable crowdfunding platform using Spring Boot 3, Spring Data JPA, Hibernate, and React with secure layered REST APIs.
+                            A scalable crowdfunding platform using Spring Boot 3, Spring Data JPA, Hibernate, and React
+                            with secure layered REST APIs.
                         </p>
-                        
+
                         <div class="project-links">
-                            <a href="https://github.com/Sadikcserymec077/RaiseTogther" target="_blank" class="btn secondary-btn small"><i class="fa-brands fa-github"></i> GitHub</a>
-                            <a href="https://raise-togther.vercel.app/" target="_blank" class="btn primary-btn small"><i class="fa-solid fa-link"></i> Live Demo</a>
+                            <a href="https://github.com/Sadikcserymec077/RaiseTogther" target="_blank"
+                                class="btn secondary-btn small"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="https://raise-togther.vercel.app/" target="_blank" class="btn primary-btn small"><i
+                                    class="fa-solid fa-link"></i> Live Demo</a>
                         </div>
-                        
+
                         <div class="project-details">
                             <h4>Key Outcomes:</h4>
                             <ul>
-                                <li>Implemented JWT authentication, refresh token rotation, email verification, BCrypt hashing, and RBAC for user and admin workflows.</li>
-                                <li>Integrated Cloudinary, Razorpay, iText 7, and ZXing for image storage, secure payments, PDF receipts, and QR code generation.</li>
-                                <li>Built interactive dashboards with Chart.js and Spring WebSockets for real-time donation updates and campaign analytics.</li>
+                                <li>Implemented JWT authentication, refresh token rotation, email verification, BCrypt
+                                    hashing, and RBAC for user and admin workflows.</li>
+                                <li>Integrated Cloudinary, Razorpay, iText 7, and ZXing for image storage, secure
+                                    payments, PDF receipts, and QR code generation.</li>
+                                <li>Built interactive dashboards with Chart.js and Spring WebSockets for real-time
+                                    donation updates and campaign analytics.</li>
                             </ul>
                         </div>
-                        
+
                         <div class="tech-stack">
                             <span class="tech-tag">Java 17</span>
                             <span class="tech-tag">Spring Boot 3</span>
@@ -326,7 +383,8 @@
             <div class="timeline">
                 <div class="timeline-item window-card">
                     <div class="window-header">
-                        <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                        <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span
+                                class="dot green"></span></div>
                         <div class="window-title">internship.log</div>
                     </div>
                     <div class="card-content">
@@ -337,9 +395,12 @@
                         <h4 class="institution">KodNest Technologies, Bengaluru, India</h4>
                         <div class="highlights">
                             <ul>
-                                <li>Built full-stack applications using Spring Boot, REST APIs, React, and MySQL following MVC architecture.</li>
-                                <li>Worked on Core Java, JDBC, Servlets, JSP, Spring Boot, Hibernate, and front-end technologies.</li>
-                                <li>Used Git, GitHub, Maven, and Postman for version control, build management, and API testing.</li>
+                                <li>Built full-stack applications using Spring Boot, REST APIs, React, and MySQL
+                                    following MVC architecture.</li>
+                                <li>Worked on Core Java, JDBC, Servlets, JSP, Spring Boot, Hibernate, and front-end
+                                    technologies.</li>
+                                <li>Used Git, GitHub, Maven, and Postman for version control, build management, and API
+                                    testing.</li>
                             </ul>
                         </div>
                     </div>
@@ -351,7 +412,7 @@
         <section id="skills" class="section">
             <h2 class="section-title">Skills</h2>
             <div class="skills-grid">
-                
+
                 <div class="skill-category window-card">
                     <div class="window-header">
                         <div class="window-title">backend.sh</div>
@@ -416,7 +477,8 @@
                 <h2 class="section-title">Certifications</h2>
                 <div class="window-card">
                     <div class="window-header">
-                        <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                        <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span
+                                class="dot green"></span></div>
                         <div class="window-title">certs.json</div>
                     </div>
                     <div class="card-content list-content">
@@ -432,7 +494,8 @@
                 <h2 class="section-title">Achievements</h2>
                 <div class="window-card">
                     <div class="window-header">
-                        <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                        <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span
+                                class="dot green"></span></div>
                         <div class="window-title">awards.json</div>
                     </div>
                     <div class="card-content list-content">
@@ -458,11 +521,14 @@
                     <h2>Let's work together.</h2>
                     <p>Open to full-time opportunities and software engineering roles.</p>
                 </div>
-                
+
                 <div class="contact-links" style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
-                    <a href="mailto:sadik.cse.rymec@gmail.com" class="btn primary-btn">Email Me <i class="fa-solid fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/k-mohammad-sadik" target="_blank" class="btn secondary-btn">LinkedIn <i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/Sadikcserymec077" target="_blank" class="btn secondary-btn">GitHub <i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:sadik.cse.rymec@gmail.com" class="btn primary-btn">Email Me <i
+                            class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/k-mohammad-sadik" target="_blank"
+                        class="btn secondary-btn">LinkedIn <i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Sadikcserymec077" target="_blank" class="btn secondary-btn">GitHub <i
+                            class="fa-brands fa-github"></i></a>
                 </div>
             </div>
         </section>
@@ -475,13 +541,16 @@
                 <h2>Sadik.</h2>
                 <p>Engineering scalable full-stack systems and intelligent web applications.</p>
             </div>
-            
+
             <div class="footer-socials">
                 <h4>SOCIALS</h4>
                 <a href="mailto:sadik.cse.rymec@gmail.com"><i class="fa-solid fa-envelope"></i> Email &nearr;</a>
-                <a href="https://www.linkedin.com/in/k-mohammad-sadik" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn &nearr;</a>
-                <a href="https://github.com/Sadikcserymec077" target="_blank"><i class="fa-brands fa-github"></i> GitHub &nearr;</a>
-                <a href="https://leetcode.com/u/sadikcserymec077/" target="_blank"><i class="fa-solid fa-code"></i> LeetCode &nearr;</a>
+                <a href="https://www.linkedin.com/in/k-mohammad-sadik" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i> LinkedIn &nearr;</a>
+                <a href="https://github.com/Sadikcserymec077" target="_blank"><i class="fa-brands fa-github"></i> GitHub
+                    &nearr;</a>
+                <a href="https://leetcode.com/u/sadikcserymec077/" target="_blank"><i class="fa-solid fa-code"></i>
+                    LeetCode &nearr;</a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -492,4 +561,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
