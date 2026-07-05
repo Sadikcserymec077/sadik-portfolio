@@ -52,21 +52,46 @@
 
     <!-- Interactive Terminal Modal -->
     <div class="terminal-modal" id="terminal-modal">
-        <div class="terminal-window">
-            <div class="window-header">
+        <div class="terminal-window cli-mode">
+            <div class="window-header cli-header">
                 <div class="window-dots">
                     <span class="dot red" id="close-terminal"></span>
                     <span class="dot yellow"></span>
                     <span class="dot green"></span>
                 </div>
-                <div class="window-title">sadik@portfolio:~</div>
-            </div>
-            <div class="terminal-body" id="terminal-body">
-                <div class="terminal-line">Welcome to K Mohammad Sadik's Interactive Portfolio Terminal.</div>
-                <div class="terminal-line">Type <span class="highlight">help</span> for a list of available commands.
+                <div class="window-title">sadik@portfolio: ~ (sh)</div>
+                <div class="window-close-icon" id="close-terminal-icon">
+                    <i class="fa-solid fa-xmark"></i>
                 </div>
+            </div>
+            <div class="terminal-body cli-body" id="terminal-body">
+                <pre class="ascii-art">
+  ____      _      ____    ___    _  __
+ / ___|    / \    |  _ \  |_ _|  | |/ /
+ \___ \   / _ \   | | | |  | |   | ' / 
+  ___) | / ___ \  | |_| |  | |   | . \ 
+ |____/ /_/   \_\ |____/  |___|  |_|\_\
+                </pre>
+                <div class="terminal-line">Welcome to Sadik's Interactive Terminal CLI v1.0.0.</div>
+                <br>
+                <div class="terminal-line">Type 'help' to see all available commands.</div>
+                <br>
+                <div class="terminal-line">[Tip: Press keyboard hotkeys (when console is closed)<br>to scroll: 's' skills, 'p' projects, 'c' contact, 'e'<br>education, 'a' about]</div>
+                <br>
+                <div class="terminal-line">[Or type single-letter commands (a, s, p, e, c, t)<br>directly inside this terminal!]</div>
+                <br>
+                <div class="terminal-quick-commands">
+                    <button class="cmd-btn" data-cmd="about">/about</button>
+                    <button class="cmd-btn" data-cmd="projects">/projects</button>
+                    <button class="cmd-btn" data-cmd="skills">/skills</button>
+                    <button class="cmd-btn" data-cmd="education">/education</button>
+                    <button class="cmd-btn" data-cmd="contact">/contact</button>
+                    <button class="cmd-btn" data-cmd="clear">/clear</button>
+                </div>
+                <div class="terminal-divider"></div>
                 <div class="terminal-input-line">
                     <span class="prompt">sadik@portfolio:~$</span>
+                    <div class="pulse-circle-btn"></div>
                     <input type="text" id="terminal-input" autocomplete="off" autofocus>
                 </div>
             </div>
