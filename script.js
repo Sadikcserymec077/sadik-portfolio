@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
         glowY += (mouseY - glowY) * 0.05;
         
         if (glow1) {
-            glow1.style.transform = \`translate(\${glowX / 5}px, \${glowY / 5}px)\`;
+            glow1.style.transform = `translate(${glowX / 5}px, ${glowY / 5}px)`;
         }
         
         requestAnimationFrame(animateGlow);
