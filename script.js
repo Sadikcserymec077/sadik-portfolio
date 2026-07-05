@@ -4,54 +4,68 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileNav = document.getElementById('mobile-nav');
     
-    mobileMenuBtn.addEventListener('click', () => {
-        mobileNav.classList.toggle('active');
-        const icon = mobileMenuBtn.querySelector('i');
-        if(mobileNav.classList.contains('active')) {
-            icon.classList.remove('fa-bars');
-            icon.classList.add('fa-xmark');
-        } else {
-            icon.classList.remove('fa-xmark');
-            icon.classList.add('fa-bars');
-        }
-    });
+    if (mobileMenuBtn && mobileNav) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            if(icon) {
+                if(mobileNav.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-xmark');
+                } else {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
+            }
+        });
+    }
 
     // Close mobile menu on link click
     document.querySelectorAll('.mobile-link').forEach(link => {
         link.addEventListener('click', () => {
-            mobileNav.classList.remove('active');
-            const icon = mobileMenuBtn.querySelector('i');
-            icon.classList.remove('fa-xmark');
-            icon.classList.add('fa-bars');
+            if (mobileNav) mobileNav.classList.remove('active');
+            if (mobileMenuBtn) {
+                const icon = mobileMenuBtn.querySelector('i');
+                if (icon) {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
+            }
         });
     });
 
     // --- Theme Toggle ---
     const themeToggleBtn = document.getElementById('theme-toggle');
     
-    themeToggleBtn.addEventListener('click', () => {
-        document.body.classList.toggle('light-mode');
-        const icon = themeToggleBtn.querySelector('i');
-        if(document.body.classList.contains('light-mode')) {
-            icon.classList.remove('fa-moon');
-            icon.classList.add('fa-sun');
-        } else {
-            icon.classList.remove('fa-sun');
-            icon.classList.add('fa-moon');
-        }
-    });
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            const icon = themeToggleBtn.querySelector('i');
+            if (icon) {
+                if(document.body.classList.contains('light-mode')) {
+                    icon.classList.remove('fa-moon');
+                    icon.classList.add('fa-sun');
+                } else {
+                    icon.classList.remove('fa-sun');
+                    icon.classList.add('fa-moon');
+                }
+            }
+        });
+    }
 
     // --- Monospace Font Toggle ---
     const monoToggleBtn = document.getElementById('mono-toggle');
     
-    monoToggleBtn.addEventListener('click', () => {
-        document.body.classList.toggle('monospace-mode');
-        if(document.body.classList.contains('monospace-mode')) {
-            monoToggleBtn.style.color = 'var(--accent-color)';
-        } else {
-            monoToggleBtn.style.color = '';
-        }
-    });
+    if (monoToggleBtn) {
+        monoToggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('monospace-mode');
+            if(document.body.classList.contains('monospace-mode')) {
+                monoToggleBtn.style.color = 'var(--accent-color)';
+            } else {
+                monoToggleBtn.style.color = '';
+            }
+        });
+    }
 
     // --- Interactive Terminal ---
     const terminalToggle = document.getElementById('terminal-toggle');
