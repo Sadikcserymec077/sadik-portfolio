@@ -397,8 +397,8 @@ main {
 
 .cli-title {
     font-family: var(--font-mono);
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    margin-bottom: 0.75rem;
 }
 
 .prompt {
@@ -576,12 +576,13 @@ main {
 }
 
 .project-content {
-    padding: 2rem;
+    padding: 1.25rem;
 }
 
 .project-desc {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: var(--text-muted);
+    font-size: 0.9rem;
 }
 
 .project-links {
@@ -591,7 +592,7 @@ main {
 }
 
 .project-details {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .project-details h4 {
@@ -605,9 +606,9 @@ main {
 
 .project-details li {
     position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 0.8rem;
-    font-size: 0.95rem;
+    padding-left: 1.2rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.85rem;
 }
 
 .project-details li::before {
